@@ -1,3 +1,7 @@
+# FORK
+
+This repository is a fork of [https://github.com/secmask/go-redisproto](https://github.com/secmask/go-redisproto)
+
 # Introduction
 
 go-redisproto is a go library to create server, service for RPC that compatible with redis protocol
