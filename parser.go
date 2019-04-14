@@ -15,7 +15,7 @@ var (
 	InvalidBulkSize = errors.New("Invalid bulk size")
 	LineTooLong     = errors.New("LineTooLong")
 
-	ReadBufferInitSize = 1 << 20
+	ReadBufferInitSize = 1 << 16
 	MaxNumArg          = 20
 	MaxBulkSize        = 1 << 20
 	MaxTelnetLine      = 1 << 10
