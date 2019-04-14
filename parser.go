@@ -15,9 +15,9 @@ var (
 	InvalidBulkSize = errors.New("Invalid bulk size")
 	LineTooLong     = errors.New("LineTooLong")
 
-	ReadBufferInitSize = 1 << 16
+	ReadBufferInitSize = 1 << 20
 	MaxNumArg          = 20
-	MaxBulkSize        = 1 << 16
+	MaxBulkSize        = 1 << 20
 	MaxTelnetLine      = 1 << 10
 	spaceSlice         = []byte{' '}
 	emptyBulk          = [0]byte{}
