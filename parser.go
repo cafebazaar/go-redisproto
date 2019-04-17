@@ -4,6 +4,8 @@ import (
 	"bytes"
 	"errors"
 	"io"
+
+	pkgErrors "github.com/pkg/errors"
 )
 
 var (
@@ -201,7 +203,7 @@ func (r *Parser) parseBinary() (*Command, error) {
 			argv = append(argv, r.buffer[r.parsePosition:(r.parsePosition+plen)])
 			r.parsePosition += plen
 		default:
-			return nil, InvalidBulkSize
+			return nil, pkgErrors.WithMessagef(InvalidBulkSize, "Invalid Bulk Size: %v", plen)
 		}
 		if e = r.discardNewLine(); e != nil {
 			return nil, e
