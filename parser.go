@@ -19,7 +19,7 @@ var (
 
 	ReadBufferInitSize = 1 << 16
 	MaxNumArg          = 20
-	MaxBulkSize        = 1 << 22
+	MaxBulkSize        = 1 << 23
 	MaxTelnetLine      = 1 << 10
 	spaceSlice         = []byte{' '}
 	emptyBulk          = [0]byte{}
