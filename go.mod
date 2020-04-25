@@ -1,4 +1,4 @@
-module git.cafebazaar.ir/divar/thirdparty/go-redisproto.opensource
+module github.com/cafebazaar/go-redisproto
 
 go 1.14
 
